@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("content"),document.createElement("div").classList.add("header"),document.createElement("div").classList.add("navBar"),document.createElement("div").classList.add("main"),console.log("Hello there!")})();
