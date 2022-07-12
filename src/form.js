@@ -3,10 +3,10 @@ import { getDate } from "date-fns";
     
 //constructor for new project
 export function Project(name, date, details, priority) {
-    this.name = name
-    this.date = date
-    this.details = details
-    this.priority = priority
+    this.name = name;
+    this.date = date;
+    this.details = details;
+    this.priority = priority;
 }
 
 //creates a new proj & pushes
@@ -19,10 +19,10 @@ export function makeNewProject(formInput, formInput2, formInput3, formInput4) {
         const details = formInput3;
         const priority = formInput4;
         const newProject = new Project(name, date, details, priority);
-        myProjects.push(newProject)
+        myProjects.push(newProject);
         myProjects.forEach(function (item) {
             createDivs(item);
-        })
+        });
         localStorage.setItem('tasks', JSON.stringify(myProjects));
         return myProjects;
     } else {
@@ -31,10 +31,10 @@ export function makeNewProject(formInput, formInput2, formInput3, formInput4) {
         const details = formInput3;
         const priority = formInput4;
         const newProject = new Project(name, date, details, priority);
-        myProjects.push(newProject)
+        myProjects.push(newProject);
         myProjects.forEach(function (item) {
             createDivs(item);
-        })
+        });
         localStorage.setItem('tasks', JSON.stringify(myProjects));
         return myProjects;
     }
