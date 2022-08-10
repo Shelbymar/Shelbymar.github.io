@@ -7,7 +7,6 @@ export function displayForm() {
 
         //name form variables
         const main = document.getElementById('main');
-        
         const header = document.getElementById('header');
         const formContainer = document.createElement('span');
         const form = document.createElement('form');

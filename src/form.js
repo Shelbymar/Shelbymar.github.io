@@ -133,7 +133,6 @@ function createDivs(item) {
   const dateEl = document.createElement("div");
   nameEl.innerHTML = item.name;
   dateEl.innerHTML = item.date;
-  let detailsEl = item.details;
   if (item.priority === "Low") {
     card.style.borderLeft = "12px solid green";
   } else if (item.priority === "Med") {
